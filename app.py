@@ -62,7 +62,7 @@ def upload_file():
         flash('File successfully uploaded and data stored in vector store')
         return redirect(url_for('index'))
 
-# Route to process a user query and return the answer
+# Route to process a user query and return the answer1
 @app.route('/query', methods=['POST'])
 def query():
     if vectorstore is None:
